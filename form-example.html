@@ -1,0 +1,74 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Form Example</title>
+    </head>
+    <body>
+        <h1>Form Example</h1>
+        <form method="POST" action="" autocomplete="off" target="_blank">
+            <p><label>Title
+                    <input type="text" name="Title" readonly>
+                </label></p>
+            <p><label>Edition
+                <input type="number" name="Edition" disabled>
+            </label></p>
+            <p>
+                <label>
+                    Range
+                    <input type="range" min="1" max="5" name="Range">
+                </label>
+            </p>
+            <p><label>Year
+                <input type="date" name="Year" required>
+            </label></p>
+            <p><label>Color
+                <input type="color" name="Color">
+            </label></p>
+            <p><label>Email
+                <input type="email" name="Email" required autocomplete="on">
+            </label></p>
+
+            <p>
+                <label>
+                    In Print
+                    <input type="checkbox" name="in-print" value="in-print">
+                </label>
+            </p>
+
+            <p>
+                <label>Author Status<br>
+                    <label>Active<input type="checkbox" name="status" value="Active"></label>
+                    <label>Retired<input type="checkbox" name="status" value="Retired"></label>
+                    <label>Deceased<input type="checkbox" name="status" value="Deceased"></label>
+                </label>
+            </p>
+
+            <p>
+                <label>Author Status<br>
+                    <select name="status-dropdown">
+                        <option>Active</option>
+                        <option>Retired</option>
+                        <option>Deceased</option>
+                    </select>
+                </label>
+            </p>
+
+            <p>
+                <label>
+                    File
+                    <input type="file" name="file">
+                </label>
+            </p>
+
+            <button type="submit">
+                Submit
+            </button>
+            <button type="reset">
+                Reset
+            </button>
+            <button type="button">
+                Spetial Action
+            </button>
+        </form>
+    </body>
+</html>
